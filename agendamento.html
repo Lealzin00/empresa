@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendamento & Valores — Brize Clinic</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .success-msg {
+            display: none;
+            background: #EDF7F0;
+            border: 1px solid #B2D8BC;
+            border-radius: var(--border-card);
+            padding: 24px 32px;
+            text-align: center;
+            color: #2D6A40;
+            font-size: 1rem;
+            margin-top: 24px;
+        }
+
+        .success-msg.show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            <svg class="logo-icon" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="23" cy="23" r="22" fill="#FAF8F6" stroke="#C9A98A" stroke-width="1.5" />
+                <ellipse cx="23" cy="12" rx="4" ry="7" fill="#C9A98A" opacity="0.5" />
+                <ellipse cx="23" cy="34" rx="4" ry="7" fill="#C9A98A" opacity="0.5" />
+                <ellipse cx="12" cy="23" rx="7" ry="4" fill="#C9A98A" opacity="0.5" />
+                <ellipse cx="34" cy="23" rx="7" ry="4" fill="#C9A98A" opacity="0.5" />
+                <ellipse cx="14.5" cy="14.5" rx="4" ry="7" fill="#C9A98A" opacity="0.3"
+                    transform="rotate(-45 14.5 14.5)" />
+                <ellipse cx="31.5" cy="31.5" rx="4" ry="7" fill="#C9A98A" opacity="0.3"
+                    transform="rotate(-45 31.5 31.5)" />
+                <ellipse cx="31.5" cy="14.5" rx="4" ry="7" fill="#C9A98A" opacity="0.3"
+                    transform="rotate(45 31.5 14.5)" />
+                <ellipse cx="14.5" cy="31.5" rx="4" ry="7" fill="#C9A98A" opacity="0.3"
+                    transform="rotate(45 14.5 31.5)" />
+                <circle cx="23" cy="23" r="5" fill="#C9A98A" />
+            </svg>
+            <div class="logo-text">
+                <span class="logo-name">Brize</span>
+                <span class="logo-tagline">Clinic · Estética</span>
+            </div>
+        </a>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="sobre.html">Sobre & Valores</a>
+        <a href="agendamento.html" class="active">Agendamento</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <section class="hero" style="min-height:300px;">
+        <div class="hero-content">
+            <p class="hero-eyebrow">Reserve seu horário</p>
+            <h1>Agendamento & <em>Valores</em></h1>
+            <p>Transparência total nos preços e facilidade para marcar o seu atendimento.</p>
+        </div>
+    </section>
+
+    <!-- TABELA DE PREÇOS -->
+    <div class="section">
+        <p class="section-sub" style="text-align:center;">Investimento</p>
+        <h2 class="section-title" style="text-align:center;">Nossos Valores</h2>
+        <div class="divider" style="margin:16px auto 14px;"></div>
+        <p class="section-desc" style="text-align:center; margin:0 auto 48px;">
+            Oferecemos pacotes pensados para diferentes necessidades e objetivos, sempre com qualidade e segurança.
+        </p>
+
+        <div class="price-grid">
+
+            <div class="price-card">
+                <p class="price-name">Avaliação Inicial</p>
+                <div class="price-amount">Grátis</div>
+                <p class="price-desc">Consulta de diagnóstico sem compromisso</p>
+                <ul class="price-list">
+                    <li class="price-item">Anamnese completa</li>
+                    <li class="price-item">Análise facial detalhada</li>
+                    <li class="price-item">Plano de tratamento personalizado</li>
+                    <li class="price-item">Tirada de dúvidas</li>
+                </ul>
+                <a href="#form" class="btn btn-outline" style="width:100%;text-align:center;">Agendar</a>
+            </div>
+
+            <div class="price-card featured">
+                <span class="price-badge">Mais Procurado</span>
+                <p class="price-name">Harmonização Completa</p>
+                <div class="price-amount">R$<span>1.200</span></div>
+                <p class="price-desc">Protocolo facial completo — a partir de</p>
+                <ul class="price-list">
+                    <li class="price-item">Toxina botulínica (3 áreas)</li>
+                    <li class="price-item">Preenchimento labial ou bigode chinês</li>
+                    <li class="price-item">Hidratação profunda</li>
+                    <li class="price-item">Retorno incluso</li>
+                </ul>
+                <a href="#form" class="btn btn-primary"
+                    style="width:100%;text-align:center;background:var(--rose-gold);">Agendar</a>
+            </div>
+
+            <div class="price-card">
+                <p class="price-name">Skin Care Premium</p>
+                <div class="price-amount">R$<span>380</span></div>
+                <p class="price-desc">Por sessão — pacotes com desconto</p>
+                <ul class="price-list">
+                    <li class="price-item">Limpeza de pele profunda</li>
+                    <li class="price-item">Peeling personalizado</li>
+                    <li class="price-item">Máscara calmante e nutritiva</li>
+                    <li class="price-item">Protetor solar incluído</li>
+                </ul>
+                <a href="#form" class="btn btn-outline" style="width:100%;text-align:center;">Agendar</a>
+            </div>
+
+            <div class="price-card">
+                <p class="price-name">Estética Corporal</p>
+                <div class="price-amount">R$<span>250</span></div>
+                <p class="price-desc">Por sessão — pacotes com desconto</p>
+                <ul class="price-list">
+                    <li class="price-item">Drenagem linfática manual</li>
+                    <li class="price-item">Massagem modeladora</li>
+                    <li class="price-item">Crioterapia localizada</li>
+                    <li class="price-item">Radiofrequência (área escolhida)</li>
+                </ul>
+                <a href="#form" class="btn btn-outline" style="width:100%;text-align:center;">Agendar</a>
+            </div>
+
+        </div>
+
+        <p style="text-align:center; color:var(--muted); font-size:0.82rem; margin-top:24px;">
+            * Preços sujeitos a alteração. Consulte disponibilidade de pacotes e condições de pagamento.
+        </p>
+    </div>
+
+    <!-- FORMAS DE PAGAMENTO -->
+    <div style="background:#F4ECE5; padding:10px 0;">
+        <div class="section" style="text-align:center;">
+            <p class="section-sub">Facilidade para você</p>
+            <h2 class="section-title">Formas de Pagamento</h2>
+            <div class="divider" style="margin:16px auto 40px;"></div>
+            <div style="display:flex; justify-content:center; gap:28px; flex-wrap:wrap;">
+                <div class="card" style="text-align:center; min-width:180px; flex:0 0 auto;">
+                    <img class="card-img" style="margin:0 auto 14px;"
+                        src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=144&q=80&auto=format&fit=crop"
+                        alt="Cartão de Crédito" />
+                    <h3>Cartão de Crédito</h3>
+                    <p>Até 12× sem juros no cartão de crédito.</p>
+                </div>
+                <div class="card" style="text-align:center; min-width:180px; flex:0 0 auto;">
+                    <img class="card-img" style="margin:0 auto 14px;"
+                        src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=144&q=80&auto=format&fit=crop"
+                        alt="PIX" />
+                    <h3>PIX</h3>
+                    <p>Pagamento instantâneo com 5% de desconto à vista.</p>
+                </div>
+                <div class="card" style="text-align:center; min-width:180px; flex:0 0 auto;">
+                    <img class="card-img" style="margin:0 auto 14px;"
+                        src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=144&q=80&auto=format&fit=crop"
+                        alt="Dinheiro" />
+                    <h3>Dinheiro</h3>
+                    <p>Aceitamos pagamento em dinheiro com desconto especial.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORMULÁRIO DE AGENDAMENTO -->
+    <div class="section" id="form">
+        <p class="section-sub" style="text-align:center;">Reservar Horário</p>
+        <h2 class="section-title" style="text-align:center;">Formulário de Agendamento</h2>
+        <div class="divider" style="margin:16px auto 40px;"></div>
+
+        <div class="form-wrap">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Nome completo</label>
+                    <input type="text" id="nome" placeholder="Seu nome" />
+                </div>
+                <div class="form-group">
+                    <label>Telefone / WhatsApp</label>
+                    <input type="tel" id="tel" placeholder="(00) 00000-0000" />
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" id="email" placeholder="seu@email.com" />
+                </div>
+                <div class="form-group">
+                    <label>Serviço desejado</label>
+                    <select id="servico">
+                        <option value="">Selecione...</option>
+                        <option>Avaliação Gratuita</option>
+                        <option>Toxina Botulínica</option>
+                        <option>Ácido Hialurônico</option>
+                        <option>Bioestimuladores de Colágeno</option>
+                        <option>Microagulhamento</option>
+                        <option>Peeling Químico</option>
+                        <option>Drenagem Linfática</option>
+                        <option>Criolipólise</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Data preferida</label>
+                    <input type="date" id="data" />
+                </div>
+                <div class="form-group">
+                    <label>Período preferido</label>
+                    <select id="periodo">
+                        <option value="">Selecione...</option>
+                        <option>Manhã (8h – 12h)</option>
+                        <option>Tarde (12h – 17h)</option>
+                        <option>Final do dia (17h – 19h)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Mensagem (opcional)</label>
+                <textarea id="msg" placeholder="Conte-nos um pouco sobre suas expectativas ou dúvidas..."></textarea>
+            </div>
+            <button class="btn btn-primary" style="width:100%;font-size:0.85rem;" onclick="enviarAgendamento()">
+                Confirmar Agendamento
+            </button>
+            <div class="success-msg" id="sucesso">
+                Agendamento recebido com sucesso! Entraremos em contato em breve para confirmar seu horário.
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-logo">Brize Clinic</div>
+        <p>Harmonização Facial & Estética &nbsp;·&nbsp; <a href="contato.html">Ver Contato</a></p>
+        <p style="margin-top:10px;">© 2025 Brize Clinic. Todos os direitos reservados.</p>
+        <p>Davi Leal Correia | David Ferreira Gomes de Barros | Aurélio Alves Castellar</p>
+    </footer>
+
+    <script>
+        function enviarAgendamento() {
+            const nome = document.getElementById('nome').value.trim();
+            const servico = document.getElementById('servico').value;
+            if (!nome || !servico) {
+                alert('Por favor, preencha seu nome e selecione o serviço desejado.');
+                return;
+            }
+            document.getElementById('sucesso').classList.add('show');
+            document.querySelector('.form-wrap button').disabled = true;
+        }
+    </script>
+
+</body>
+
+</html>
